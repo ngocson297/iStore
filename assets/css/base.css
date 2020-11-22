@@ -1,0 +1,79 @@
+:root {
+    --primary-color:#0071e3;
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --border-color: #dbdbdb;
+    --star-gold-color: #ffce3e;
+    --header-height:120px;
+    --navbar-height: 34px;
+    --header-with-search-height: calc(var(--header-height)- var(--navber-height));
+
+}
+
+*{
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%; /* để 1rem tương đương 10px , nếu để 100% thì 1 rem~16px */
+    line-height: 1.6rem;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Responsive */
+.grid {
+
+    width: 1200px; /* kich thuoc man hinh 1200 */
+    max-width: 100%; /* lon hon 1200 thi se keo nho xuong bang man hinh */
+    margin: 0 auto;
+}
+
+.grid__full-width {
+    width: 100%;
+}
+
+.grid__row {
+    display: flex; /* hien thi ngang */
+    flex-wrap: wrap; /* vuot qua thi xuong hang */
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.grid__column-2{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 16.6667%;
+}
+
+.grid__column-2-4 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 20%;
+}
+
+.grid__column-10 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 83.3334%;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes growth {
+    from {
+        transform: scale(var(--growth-from));
+    }
+    to {
+        transform: scale(var(--growth--to));
+    }
+}
