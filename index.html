@@ -26,6 +26,7 @@
                         </p>   
                     </marquee>
                 </div>
+
                 <ul class="header__navbar-list">
                     <li class="header__navbar-item">
                         <a href="" class="header__navbar-item-link">
@@ -59,7 +60,7 @@
                             Trợ giúp
                         </a>
                     </li>
-
+<!-- nav-user -->
                     <li class="header__navbar-item header__navbar-user">
                         <img src="https://bit.ly/2IVaayQ" alt="" class="header__navbar-user-img">
                         <span class="header__navbar-user-name">Sơn Nguyễn</span>
@@ -97,14 +98,14 @@
                 </div>
                 <div class="header__search">
                     <div class="header__search-input-wrap">
-                        <input type="text" class="header__search-input" placeholder="Nhập để tìm kiếm sản phẩm">
+                        <input type="text" class="header__search-input" placeholder="Nhập để tìm kiếm sản phẩm" name="keyword">
                     </div>
                     <button class="header__search-btn">
                         <i class="header__search-btn-icon fas fa-search"></i>
                     </button>
                 </div>
         </div>
-
+ 
         <div class="app__container">
             <div class="grid">
              <div class="grid__row app__content">
@@ -116,38 +117,41 @@
                              
                          <ul class="category-list">
                              <li class="category-item category-item--active">
-                                 <a href="" class="category-item__link">Iphone</a>
+                                 <a href="" class="category-item__link">iPhone</a>
                              </li>
                              <li class="category-item">
-                                 <a href="" class="category-item__link">Ipac</a>
+                                 <a href="" class="category-item__link">iPad</a>
                              </li>
                              <li class="category-item">
                                  <a href="" class="category-item__link">Mac</a>
                              </li>
                              <li class="category-item">
-                                 <a href="" class="category-item__link">Apple Wactch</a>
+                                 <a href="" class="category-item__link">Watch</a>
                              </li>
                              <li class="category-item">
-                                <a href="" class="category-item__link">Apple TV</a>
+                                <a href="" class="category-item__link">TV</a>
                             </li>
                             <li class="category-item">
-                                <a href="" class="category-item__link">Phụ Kiện</a>
+                                <a href="" class="category-item__link">Music</a>
                             </li>
                          </ul>
                      </nav>
                  </div>
  
-                 <div class="grid__column-10">
+                 <!-- product -->
+                <div class="grid__column-10">
                     <div class="header__menu">
                         <h2>
+                            <i class="header__menu-icon fas fa-mobile-alt"></i>
                             <a href="">Iphone</a>
                         </h2>
                     </div>
-                     <div class="home-product">
+
+                    <div class="home-product">
                          <!-- Grid -> Row-> Column -->
-                         <div class="grid__row">
+                        <div class="grid__row">
                              <!-- Product item -->
-                             <div class="grid__column-2-4">
+                            <div class="grid__column-2-4">
                                  <a class="home-product-item" href="#">
                                      <div class="home-product-item__img" style="background-image: url(https://bizweb.dktcdn.net/thumb/large/100/116/615/products/iphone-12-pro-max-family-hero-all-jpeg.jpg?v=1602672460120);"></div>
                                      <h4 class="home-product-item__name">Macbook Pro 13" 512 Silver 1.4GHz - MXK72</h4>
@@ -182,42 +186,6 @@
                                          <span class="home-product-item__sale-off-label">Giảm</span>
                                      </div>
                                  </a>
-                             </div>
-                             <div class="grid__column-2-4">
-                                <a class="home-product-item" href="#">
-                                    <div class="home-product-item__img" style="background-image: url(https://bizweb.dktcdn.net/thumb/large/100/116/615/products/iphone-12-pro-max-family-hero-all-jpeg.jpg?v=1602672460120);"></div>
-                                    <h4 class="home-product-item__name">Macbook Pro 13" 512 Silver 1.4GHz - MXK72</h4>
-                                    <div class="home-product-item__price">
-                                        <span class="home-product-item__price-old">23.390.000 ₫</span>
-                                        <span class="home-product-item__price-current">23.190.000 ₫</span>
-                                    </div>
-                                    <div class="home-product-item__action home-product-item__like--liked"> 
-                                        <span class="home-product-item__like">
-                                            <i class=" home-product-item__like-icon-empty far fa-heart"></i>
-                                            <i class=" home-product-item__like-icon-fill fas fa-heart"></i>
-                                        </span>
-                                        <div class="home-product-item__rating">
-                                            <i class="home-product-item__star--gold fas fa-star"></i>
-                                            <i class="home-product-item__star--gold fas fa-star"></i>
-                                            <i class="home-product-item__star--gold fas fa-star"></i>
-                                            <i class="home-product-item__star--gold fas fa-star"></i>
-                                            <i class=" fas fa-star"></i>
-                                        </div>
-                                        <span class="home-product-item__sold">29 Đã bán</span>
-                                    </div>
-                                    <div class="home-product-item__origin">
-                                        <span class="home-product-item__brand">Son</span>
-                                        <span class="home-product-item__origin-name">VietNam</span>
-                                    </div>
-                                    <div class="home-product-item__favourite">
-                                        <i class="fas fa-check "></i>
-                                       <span>Yêu thích</span>
-                                    </div>
-                                    <div class="home-product-item__sale-off">
-                                        <span class="home-product-item__sale-off-percent">43%</span>
-                                        <span class="home-product-item__sale-off-label">Giảm</span>
-                                    </div>
-                                </a>
                             </div>
                             <div class="grid__column-2-4">
                                 <a class="home-product-item" href="#">
@@ -507,22 +475,61 @@
                                     </div>
                                 </a>
                             </div>
-                            
-                            
-                         </div>
-                     </div>
-                 </div>  
+                            <div class="grid__column-2-4">
+                                <a class="home-product-item" href="#">
+                                    <div class="home-product-item__img" style="background-image: url(https://bizweb.dktcdn.net/thumb/large/100/116/615/products/iphone-12-pro-max-family-hero-all-jpeg.jpg?v=1602672460120);"></div>
+                                    <h4 class="home-product-item__name">Macbook Pro 13" 512 Silver 1.4GHz - MXK72</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">23.390.000 ₫</span>
+                                        <span class="home-product-item__price-current">23.190.000 ₫</span>
+                                    </div>
+                                    <div class="home-product-item__action home-product-item__like--liked"> 
+                                        <span class="home-product-item__like">
+                                            <i class=" home-product-item__like-icon-empty far fa-heart"></i>
+                                            <i class=" home-product-item__like-icon-fill fas fa-heart"></i>
+                                        </span>
+                                        <div class="home-product-item__rating">
+                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                            <i class=" fas fa-star"></i>
+                                        </div>
+                                        <span class="home-product-item__sold">29 Đã bán</span>
+                                    </div>
+                                    <div class="home-product-item__origin">
+                                        <span class="home-product-item__brand">Son</span>
+                                        <span class="home-product-item__origin-name">VietNam</span>
+                                    </div>
+                                    <div class="home-product-item__favourite">
+                                        <i class="fas fa-check "></i>
+                                       <span>Yêu thích</span>
+                                    </div>
+                                    <div class="home-product-item__sale-off">
+                                        <span class="home-product-item__sale-off-percent">43%</span>
+                                        <span class="home-product-item__sale-off-label">Giảm</span>
+                                    </div>
+                                </a>
+                            </div>       
+                            <div class="overlay">
+                                <div class="text">Hello World</div>
+                              </div>     
+                        </div>
+                    </div>
+                </div>  
 
-                 <div class="grid__row app__content">
+                <div class="grid__row app__content">
                     <div class="grid__column-2">
                     </div>
     
                     <div class="grid__column-10">
                        <div class="header__menu">
                            <h2>
+                            <i class="header__menu-icon fas fa-laptop"></i>
                                <a href="">Ipac</a>
                            </h2>
                        </div>
+                        
                         <div class="home-product">
                             <!-- Grid -> Row-> Column -->
                             <div class="grid__row">
@@ -891,7 +898,7 @@
                             </div>
                         </div>
                     </div>                   
-            </div>
+                </div>
         </div>
         </div>
 
@@ -1062,6 +1069,51 @@
                 </div>
                 
             </div>
+            <button class="button_scroll2top"><i class="fas fa-arrow-up"></i></button>
+            <!-- onclick="page_scroll2top() -->
         </footer>
-    </div>
+        <!-- <div class="sk-fading-circle">
+            <div class="sk-circle1 sk-circle"></div>
+            <div class="sk-circle2 sk-circle"></div>
+            <div class="sk-circle3 sk-circle"></div>
+            <div class="sk-circle4 sk-circle"></div>
+            <div class="sk-circle5 sk-circle"></div>
+            <div class="sk-circle6 sk-circle"></div>
+            <div class="sk-circle7 sk-circle"></div>
+            <div class="sk-circle8 sk-circle"></div>
+            <div class="sk-circle9 sk-circle"></div>
+            <div class="sk-circle10 sk-circle"></div>
+            <div class="sk-circle11 sk-circle"></div>
+            <div class="sk-circle12 sk-circle"></div>
+          </div>
+    </div> -->
+
+    
+    <script type="text/javascript">
+    //     	$(window).scroll(function(){
+	// 	if($(window).scrollTop() >= 10) {
+	// 		$('.button_scroll2top').show();
+	// 	} else {
+	// 		$('.button_scroll2top').hide();
+	// 	}
+	// });
+	// function page_scroll2top(){
+	// 	$('html,body').animate({
+	// 		scrollTop: 0
+	//     }, 'fast');
+	// }
+
+    const button_scroll2top = document.querySelector(".button_scroll2top");
+        button_scroll2top.addEventListener("click", function() {
+            // window.scrollTo(0,0);
+            window.scrollTo( {
+                top:0,
+                left:0,
+                behavior:"smooth"
+            }
+            )
+            // $("html,body").animate({ scrollTop: 0}, "slow");
+        });
+
+    </script>
 </body>
